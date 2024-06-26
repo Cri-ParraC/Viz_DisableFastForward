@@ -1,14 +1,14 @@
 //=============================================================================
-// Viz_DisableFastForward.js [MZ] (v1.0.0)
+// Viz_DisableFastForward.js [MZ] (v1.0.1)
 //=============================================================================
 
 /*:
  * @target MZ
- * @plugindesc [MZ] (v1.0.0) Desactiva el "empujar" eventos manteniendo Z.
+ * @plugindesc [MZ] (v1.0.1) Desactiva el "empujar" eventos manteniendo Z.
  * @author Vizcacha
- * @version 1.0.0
+ * @version 1.0.1
  * @url https://github.com/Cri-ParraC/Viz_DisableFastForward
- * @help Viz_DisableFastForward.js [MZ] (v1.0.0)
+ * @help Viz_DisableFastForward.js [MZ] (v1.0.1)
  * ----------------------------------------------------------------------------
  * Plugin sencillo para RPG Maker MZ que deshabilita un comportamiento por
  * defecto del juego.
@@ -19,7 +19,13 @@
 
 (() => {
   "use strict";
-  console.info("Viz_DisableFastForward.js [MZ] (v1.0.0) activado");
+  console.info("Viz_DisableFastForward.js [MZ] (v1.0.1) activado");
+
+  //-----------------------------------------------------------------------------
+  // Scene_Map
+  //-----------------------------------------------------------------------------
+
+  // Scene_Map.isFastForward
 
   Scene_Map.prototype.isFastForward = function () {
     return false;
